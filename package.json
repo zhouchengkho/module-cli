@@ -1,0 +1,21 @@
+{
+  "name": "module-cli",
+  "version": "1.0.0",
+  "description": "cli for creating node web app modules",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "--help"
+  },
+  "keywords": [
+    "cool",
+    "stuff"
+  ],
+  "author": "zhoucheng",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^2.5.0"
+  }
+}
