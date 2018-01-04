@@ -84,7 +84,7 @@ module.exports = {
 
         var template =
             "var express = require('express');\n" +
-            "var auth = require(basePath + 'helper/auth');\n" +
+            // "var auth = require(basePath + 'helper/auth');\n" +
             "var "+ctrl+" = require('"+ctrlPath+"');\n" +
             "var "+middleware+" = require('"+middlewarePath+"');\n" +
             "var "+router+" = express.Router();\n\n\n" +
@@ -100,7 +100,7 @@ module.exports = {
             router+".post('/:id', "+updateMiddleware+");\n\n" +
             "var "+DeleteMiddleware+" = ["+self.point(ctrl, Delete)+"];\n" +
             router+".delete('/:id', "+DeleteMiddleware+");\n\n" +
-            "module.exports = articleRouter;"
+            "module.exports = "+router+";"
         return template;
     },
     genModelTemplate: function(name) {

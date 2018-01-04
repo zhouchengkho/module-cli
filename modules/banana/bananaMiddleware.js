@@ -1,4 +1,4 @@
-var validator = require('./sampleValidator.js');
+var validator = require('./bananaValidator.js');
 
 module.exports = {
    validateInput: function (type, validateType) {
