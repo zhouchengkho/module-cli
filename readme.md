@@ -8,7 +8,7 @@
 node index.js --help
 ```
 
-### Type the following command to see generate some cool API
+### Type the following command to generate some cool API
 ```
 node index.js module:my_module
 ```
